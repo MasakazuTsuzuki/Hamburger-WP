@@ -1,0 +1,40 @@
+@charset "UTF-8";
+header {
+  display: block;
+}
+
+/*header部分*/
+.l-main_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px;
+}
+.l-main_header h1 {
+  font-size: 64px;
+  color: #707070;
+}
+.l-main_header .search-box {
+  display: flex;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  height: 46px;
+  width: 396px;
+}
+.l-main_header .search-box_button {
+  display: block;
+  width: 136px;
+  height: 46px;
+  font-size: 16px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  margin-left: 12px;
+}
+.l-main_header .input {
+  display: block;
+}
+.l-main_header .fas {
+  margin: auto;
+  margin-left: 12px;
+}

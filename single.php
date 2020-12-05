@@ -1,14 +1,5 @@
-<!doctype html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburger</title>
-    <link rel="stylesheet" href="css/ress.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-</head>
+<!-- header -->
+<?php get_header(); ?>
 
 <body>
     <div class="a">
@@ -156,53 +147,9 @@
             </div>
         </article>
 
-        <aside>
-            <div class="l-sidebar_wrapper">
-                <div class="l-sidebar_contents">
-                    <h2>Menu</h2>
-                    <section>
-                        <h3>バーガー</h3>
-                        <ul>
-                            <li>ハンバーガー</li>
-                            <li>チーズバーガー</li>
-                            <li>テリヤキバーガー</li>
-                            <li>アボカドバーガー</li>
-                            <li>フィッシュバーガー</li>
-                            <li>ベーコンバーガー</li>
-                            <li>チキンバーガー</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>サイド</h3>
-                        <ul>
-                            <li>ポテト</li>
-                            <li>サラダ</li>
-                            <li>ナゲット</li>
-                            <li>コーン</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>ドリンク</h3>
-                        <ul>
-                            <li>コーラ</li>
-                            <li>ファンタ</li>
-                            <li>オレンジ</li>
-                            <li>アップル</li>
-                            <li>紅茶（Ice/Hot）</li>
-                            <li>コーヒー（Ice/Hot）</li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-        </aside>
+        <!-- sidebar -->
+        <?php get_sidebar(); ?>
     </div>
 
-    <footer>
-        <div class="l-footer">
-            <p class="l-footer_information">ショップ情報｜ヒストリー</p>
-            <p class="l-footer_copyright">Copyright: RaiseTech</p>
-        </div>
-    </footer>
-</body>
-
-</html>
+    <!-- footer -->
+    <?php get_footer(); ?>

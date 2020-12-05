@@ -1,0 +1,23 @@
+footer {
+  display: block;
+}
+
+.l-footer {
+  height: 150px;
+  background-color: #917B67;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+}
+
+.l-footer_information {
+  padding-top: 43px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.l-footer_copyright {
+  padding-top: 39px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=l-footer.css.map */

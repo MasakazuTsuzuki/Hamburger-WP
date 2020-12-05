@@ -1,0 +1,22 @@
+footer {
+    display: block;
+}
+
+.l-footer {
+    height: 150px;
+    background-color: #917B67;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+
+    &_information {
+        padding-top: 43px;
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    &_copyright {
+        padding-top: 39px;
+        font-size: 14px;
+    }
+}
