@@ -4,10 +4,9 @@
 
 <!-- hero -->
 <section class="p-hero archive">
-    <h2>Menu:<br class="SP">
+    <h2>Menu:
         <?php single_cat_title(); ?>
     </h2>
-    <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/archive-img1.jpg" alt="Hamburgerの写真"></figure>
 </section>
 
 <!-- message -->
@@ -21,18 +20,19 @@
 <!-- article ハンバーガー説明-->
 
 <section>
+<div class="p-article__archive">
     <?php
     if (have_posts()) :
         while (have_posts()) :
             the_post();
     ?>
 
-            <div class="p-article__archive">
                 <div class="p-article__archive__wrapper">
                     <?php the_post_thumbnail(); ?>
                     <div class="p-article__archive__contents">
                         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h2>
                         <?php the_content(); ?>
+                        <?php the_tags(); ?>
                         <div class="button">
                             <button href="<?php the_permalink(); ?>">詳しく見る</button>
                         </div>

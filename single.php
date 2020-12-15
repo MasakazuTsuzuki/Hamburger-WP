@@ -6,12 +6,12 @@ if (have_posts()) :
     while (have_posts()) :
         the_post();
 ?>
-        <main class="l-single-main_contents">
-            <div class="l-single-main_contents_bg">
-                <h2><?php the_title(); ?></h2>
-                <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img1.jpg" alt="Hamburger"></figure>
+        <main class="l-single-main__contents">
+            <div class="l-single-main__contents__bg">
+            <h2><?php the_title(); ?></h2>
+        <?php the_post_thumbnail(); ?>
             </div>
-            <div class="l-single-main_contents_title">
+            <div class="l-single-main__contents__title">
                 <h2>見出し h2</h2>
                 <p>Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
                 </p>
@@ -30,10 +30,10 @@ if (have_posts()) :
             </div>
             <section>
                 <div class="l-single-sub_menu">
-                    <figure><img src="img/single-img2.jpg" alt="ハンバーガー"></figure>
-                    <div class="l-single-sub_menu_bg">
-                        <figure><img src="img/single-img3.jpg" alt="チーズバーガー"></figure>
-                        <div class="l-single-sub_menu_contents">
+                    <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img2.jpg" alt="ハンバーガー"></figure>
+                    <div class="l-single-sub_menu__bg">
+                        <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img3.jpg" alt="チーズバーガー"></figure>
+                        <div class="l-single-sub_menu__contents">
                             <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                                 テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                                 テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
@@ -42,8 +42,8 @@ if (have_posts()) :
                             </p>
                         </div>
                     </div>
-                    <div class="l-single-sub_menu_bg">
-                        <div class="l-single-sub_menu_contents">
+                    <div class="l-single-sub_menu__bg">
+                        <div class="l-single-sub_menu__contents">
                             <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                                 テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                                 テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
@@ -51,65 +51,65 @@ if (have_posts()) :
                                 テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                             </p>
                         </div>
-                        <figure><img src="img/single-img3.jpg" alt="チーズバーガー"></figure>
+                        <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img3.jpg" alt="チーズバーガー"></figure>
                     </div>
                     <div class="l-single-sub_menu">
-                        <figure><img src="img/single-img3.jpg" alt="ハンバーガー"></figure>
+                        <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img3.jpg" alt="ハンバーガー"></figure>
                     </div>
                 </div>
             </section>
         </main>
         <div class="l-single-wrapper grid">
-            <dic class="l-single-sub_menu-item">
+            <dic class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
             </dic>
-            <dic class="l-single-sub_menu-item">
-                <figure><img src="i<?php echo esc_url(get_template_directory_uri()); ?>/mg/single-img4.jpg" alt="ハンバーガー"></figure>
-            </dic>
-            <dic class="l-single-sub_menu-item">
+            <dic class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
             </dic>
-            <dic class="l-single-sub_menu-item">
+            <dic class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
             </dic>
-            <dic class="l-single-sub_menu-item">
+            <dic class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
             </dic>
-            <dic class="l-single-sub_menu-item">
+            <dic class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
             </dic>
-            <dic class="l-single-sub_menu-item">
+            <dic class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
             </dic>
-            <dic class="l-single-sub_menu-item">
+            <dic class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
             </dic>
-            <dic class="l-single-sub_menu-item">
+            <dic class="l-single-sub_menu__item">
+                <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
+            </dic>
+            <dic class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
             </dic>
         </div>
-        <div class="l-single-sub_menu_item">
-            <ol class="l-single-sub_menu_list1">
+        <div class="l-single-sub_menu__item">
+            <ol class="l-single-sub_menu__list1">
                 <li>リストリストリスト</li>
                 <li>リストリストリスト</li>
             </ol>
-            <ol class="l-single-sub_menu_list2">
+            <ol class="l-single-sub_menu__list2">
                 <li>リスト2リスト2リスト2</li>
                 <li>リスト2リスト2リスト2</li>
             </ol>
-            <ol class="l-single-sub_menu_list1">
+            <ol class="l-single-sub_menu__list1">
                 <li>リストリストリスト</li>
                 <li>リストリストリスト</li>
             </ol>
-            <ul class="l-single-sub_menu_list1">
+            <ul class="l-single-sub_menu__list1">
                 <li>リストリストリスト</li>
                 <li>リストリストリスト</li>
             </ul>
-            <ul class="l-single-sub_menu_list2">
+            <ul class="l-single-sub_menu__list2">
                 <li>リスト2リスト2リスト2</li>
                 <li>リスト2リスト2リスト2</li>
             </ul>
-            <ul class="l-single-sub_menu_list1">
+            <ul class="l-single-sub_menu__list1">
                 <li>リストリストリスト</li>
                 <li>リストリストリスト</li>
             </ul>

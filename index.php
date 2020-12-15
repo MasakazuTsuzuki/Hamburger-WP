@@ -7,7 +7,7 @@
 </section>
 
 <!-- article -->
-<?php the_content(); ?>
+<!-- <?php the_content(); ?> -->
 
 <article class="p-article">
     <div class="p-article__first">
