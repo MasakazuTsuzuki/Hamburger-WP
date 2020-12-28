@@ -22,3 +22,19 @@ function register_my_menus() {
     ) );
   }
   add_action( 'after_setup_theme', 'register_my_menus' );
+
+// 投稿だけを検索対象とする
+function my_search_condition($search) {
+	$search .= " AND (post_type = 'post' OR post_type = 'custompost')";
+	return $search;
+}
+add_filter('posts_search','my_search_condition');
+
+// // 検索条件が未入力時にsearch.phpにリダイレクトする
+// function set_redirect_template(){
+// 	if (isset($_GET['s']) && empty($_GET['s'])) {
+// 		include(TEMPLATEPATH . '/search.php');
+// 		exit;
+// 	}
+// }
+// add_action('template_redirect', 'set_redirect_template');

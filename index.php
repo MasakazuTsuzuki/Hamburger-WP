@@ -51,14 +51,14 @@
 
 
 
-<div class="p-map">
-    <div class="p-map__contents">
+<div class="c-map">
+    <figure><img src="<?php echo get_template_directory_uri(); ?>/img/front-img4.jpg" alt="map"></figure>
+    <div class="c-map__contents">
         <h3>見出しが入ります</h3>
         <hr>
         <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
         </p>
     </div>
-    <figure><img src="<?php echo get_template_directory_uri(); ?>/img/front-img4.jpg" alt="map"></figure>
 </div>
 </main>
 

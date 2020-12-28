@@ -133,7 +133,7 @@ if (have_posts()) :
                 <td class="colum2">テーブル</td>
             </tr>
         </table>
-        <div class="button">
+        <div class="single button">
             <button><a href="">ボタン</a></button>
             <p>boldboldboldboldboldboldbold</p>
         </div>
