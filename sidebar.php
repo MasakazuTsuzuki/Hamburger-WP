@@ -1,9 +1,9 @@
 <aside class="l-sidebar">
-    <h2>Menu</h2>
+    <h2 id="js__sideMenuBtn">Menu</h2>
 
     <!--スマホ用-->
     <button class="c-button__close">
-        <img id="close-button" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icon_close.png" alt="">
+        <img id="close-button" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon_close.png" alt="">
     </button>
 
     <?php

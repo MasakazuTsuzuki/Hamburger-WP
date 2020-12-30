@@ -64,7 +64,7 @@
 
 <!-- sidebar -->
 <?php get_sidebar(); ?>
-</div>
+</div>ˇ
 
 <!-- footer -->
 <?php get_footer(); ?>

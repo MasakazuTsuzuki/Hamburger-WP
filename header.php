@@ -21,14 +21,14 @@
 
     <!-- アクションフックwp_body_openを登録。JSを出力する -->
     <?php wp_body_open(); ?>
-    <div class="l-wrapper">
-        <main class="l-main">
-            <!-- header -->
-            <header class="l-header">
-                <button type="button" class="c-button__menu">
-                    <span>Menu</span>
-                </button>
-                <h1><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
+        <div class="l-wrapper black-bg">
+            <main class="l-main">
+                <!-- header -->
+                <header class="l-header">
+                    <button type="button" class="c-button__menu">
+                        <span id="js-menu-button">Menu</span>
+                    </button>
+                    <h1><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
 
-                <?php get_search_form(); ?>
-            </header>
+                    <?php get_search_form(); ?>
+                </header>

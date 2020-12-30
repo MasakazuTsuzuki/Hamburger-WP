@@ -7,7 +7,7 @@
         <h2><?php the_title(); ?></h2>
         <?php the_post_thumbnail(); ?>
     </div>
-     <?php the_content(); ?>
+    <?php the_content(); ?>
 
     <div class="l-single-main__contents__title">
         <h2>見出し h2</h2>
@@ -111,7 +111,6 @@
         <li>リストリストリスト</li>
         <li>リストリストリスト</li>
     </ul>
-</div>
 </div>
 <table>
     <tr>
