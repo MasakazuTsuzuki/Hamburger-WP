@@ -7,8 +7,6 @@
 </section>
 
 <!-- article -->
-<!-- <?php the_content(); ?> -->
-
 <article class="p-article">
     <div class="p-article__first">
         <h2>Take Out</h2>
@@ -64,7 +62,6 @@
 
 <!-- sidebar -->
 <?php get_sidebar(); ?>
-</div>ˇ
 
 <!-- footer -->
 <?php get_footer(); ?>

@@ -3,7 +3,7 @@
 
 <!-- hero -->
 <section class="p-hero archive">
-    <div class="bg"></div>
+    <div class="archive-bg"></div>
     <h2>Menu:
         <span><?php single_cat_title(); ?></span>
     </h2>
@@ -40,15 +40,17 @@
                 </div>
         <?php endwhile;
     endif; ?>
+    </div>
 </section>
-
-
 <!-- ページネーション -->
 <?php wp_pagenavi(); ?>
+</main>
+
 
 <!-- sidebar -->
 <?php get_sidebar(); ?>
-</div>
+
+
 
 <!-- footer -->
 <?php get_footer(); ?>

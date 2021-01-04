@@ -26,7 +26,7 @@
                 <!-- header -->
                 <header class="l-header">
                     <button type="button" class="c-button__menu">
-                        <span id="js-menu-button">Menu</span>
+                        <span class="btn btn-1" id="js-menu-button">Menu</span>
                     </button>
                     <h1><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
 

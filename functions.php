@@ -11,24 +11,24 @@ function hamburger_scripts()
     wp_enqueue_style( 'mplus1p', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;700&family=Roboto:wght@400;700&display=swap', array() ); 
     wp_enqueue_style('hamburger-style', get_template_directory_uri() . '/css/style.css', array(), '1,0,0');
     wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0.0');
-    wp_enqueue_script('menu', get_template_directory_uri() . '/js/humburger-menu.js', array(''), '1,0,0');
+    wp_enqueue_script('menu', get_template_directory_uri() . '/js/humburger-menu.js', array(''), '1,0,0', false);
 }
 add_action('wp_enqueue_scripts', 'hamburger_scripts');
 
 function register_my_menus() {  
     register_nav_menus( array(
-      'category_menu' => 'Category Menu',
+      'menu' => 'Category Menu',
       'footer_menu' => 'Footer Menu'
     ) );
   }
   add_action( 'after_setup_theme', 'register_my_menus' );
 
 // 投稿だけを検索対象とする
-function my_search_condition($search) {
-	$search .= " AND (post_type = 'post' OR post_type = 'custompost')";
-	return $search;
-}
-add_filter('posts_search','my_search_condition');
+// function my_search_condition($search) {
+// 	$search .= " AND (post_type = 'post' OR post_type = 'custompost')";
+// 	return $search;
+// }
+// add_filter('posts_search','my_search_condition');
 
 // // 検索条件が未入力時にsearch.phpにリダイレクトする
 // function set_redirect_template(){
@@ -38,3 +38,17 @@ add_filter('posts_search','my_search_condition');
 // 	}
 // }
 // add_action('template_redirect', 'set_redirect_template');
+
+
+// WordPressデフォルトのjQueryの読み込みをやめて､一般のjQueryを読み込む
+// 注意点として､ひとつのjQueryプラグインのためにデフォルトjQueryを削除してしまうと､WordPressのプラグインが動かなくなることがある
+function custom_print_scripts() {
+  if (!is_admin()) {
+    //デフォルトjquery削除
+    wp_deregister_script('jquery');
+    
+    //GoogleCDNから読み込む
+    wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js' );
+  }
+}
+add_action('wp_print_scripts', 'custom_print_scripts');

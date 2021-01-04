@@ -9,7 +9,6 @@ if (have_posts()) :
         <div class="l-single-main__contents">
             <div class="l-single-main__contents__bg">
                 <h2><span class="outline"><?php the_title(); ?><span></h2>
-                <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/single-img1.jpg" alt="ハンバーガーの写真"> -->
                 <?php the_post_thumbnail(); ?>
             </div>
             <div class="l-single-main__contents__title">
@@ -33,8 +32,8 @@ if (have_posts()) :
                 <div class="l-single-sub_menu">
                     <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img2.jpg" alt="ハンバーガー"></figure>
                     <div class="l-single-sub_menu__bg">
-                        <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img3.jpg" alt="チーズバーガー"></figure>
-                        <div class="l-single-sub_menu__contents">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img3.jpg" alt="チーズバーガー">
+                        <div class="l-single-sub_menu__contents contents1">
                             <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                                 テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                                 テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
@@ -44,7 +43,7 @@ if (have_posts()) :
                         </div>
                     </div>
                     <div class="l-single-sub_menu__bg">
-                        <div class="l-single-sub_menu__contents">
+                        <div class="l-single-sub_menu__contents contents2">
                             <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                                 テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                                 テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
@@ -52,42 +51,42 @@ if (have_posts()) :
                                 テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                             </p>
                         </div>
-                        <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img3.jpg" alt="チーズバーガー"></figure>
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img3.jpg" alt="チーズバーガー">
                     </div>
-                    <div class="l-single-sub_menu">
-                        <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img3.jpg" alt="ハンバーガー"></figure>
+                    <div class="l-single-sub_menu__contents contents3">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img3.jpg" alt="ハンバーガー">
                     </div>
                 </div>
             </section>
         </div>
         <div class="l-single-wrapper grid">
-            <dic class="l-single-sub_menu__item">
+            <div class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
-            </dic>
-            <dic class="l-single-sub_menu__item">
+            </div>
+            <div class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
-            </dic>
-            <dic class="l-single-sub_menu__item">
+            </div>
+            <div class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
-            </dic>
-            <dic class="l-single-sub_menu__item">
+            </div>
+            <div class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
-            </dic>
-            <dic class="l-single-sub_menu__item">
+            </div>
+            <div class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
-            </dic>
-            <dic class="l-single-sub_menu__item">
+            </div>
+            <div class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
-            </dic>
-            <dic class="l-single-sub_menu__item">
+            </div>
+            <div class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
-            </dic>
-            <dic class="l-single-sub_menu__item">
+            </div>
+            <div class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
-            </dic>
-            <dic class="l-single-sub_menu__item">
+            </div>
+            <div class="l-single-sub_menu__item">
                 <figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-img4.jpg" alt="ハンバーガー"></figure>
-            </dic>
+            </div>
         </div>
         <div class="l-single-sub_menu__item">
             <ol class="l-single-sub_menu__list1">
@@ -115,7 +114,6 @@ if (have_posts()) :
                 <li>リストリストリスト</li>
             </ul>
         </div>
-        </div>
         <table>
             <tr>
                 <td class="colum1">テーブル</td>
@@ -138,7 +136,7 @@ if (have_posts()) :
             <button><a href="">ボタン</a></button>
             <p>boldboldboldboldboldboldbold</p>
         </div>
-        </article>
+    </main>
 
     <?php
     endwhile;
@@ -151,7 +149,6 @@ endif;
 
 <!-- sidebar -->
 <?php get_sidebar(); ?>
-
 
 <!-- footer -->
 <?php get_footer(); ?>

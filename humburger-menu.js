@@ -1,23 +1,12 @@
-// $(function () {
-//   var $body = $('body');
-//   $('#js__sideMenuBtn').on('click', function () {
-//     $body.toggleClass('l-sidebar');
-//     $('#js__sideMenuBtn').on('click', function () {
-//       $body.removeClass('l-sidebar');
-//     });
-//   });
+// jQuery('.btn-1').click(function () {
+//   jQuery('.open-1').addClass('active');
+//   jQuery(this).addClass('on');
+//   jQuery(this).addClass('move-1');
 // });
 
-function toggleNav() {
-    var body = document.body;
-    var menu = document.getElementById('js-menu-button');
-    var close = document.getElementById('close-button');
+// jQuery('.close-btn').click(function () {
+//   jQuery('.open-1').removeClass('active');
+//   jQuery('.btn-1').removeClass('on');
+//   jQuery('.btn-1').removeClass('move-1');
   
-    menu.addEventListener('click', function() {
-      body.classList.toggle('nav-open');
-    });
-    close.addEventListener('click', function() {
-      body.classList.remove('nav-open');
-    });
-  }
-  toggleNav();
+// });

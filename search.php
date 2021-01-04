@@ -3,7 +3,7 @@
 
 <!-- hero -->
 <section class="p-hero archive">
-    <div class="bg"></div>
+    <div class="archive-bg"></div>
     <h2>Search:<br class="SP">
         <span><?php echo get_search_query(); ?></span>
     </h2>
@@ -44,15 +44,12 @@
     <p>検索条件にヒットした記事がありませんでした。</p>
 <?php endif; ?>
 <?php } ?>
-</main>
-</div>
-
 <!-- ページネーション -->
 <?php wp_pagenavi(); ?>
+</main>
 
 <!-- sidebar -->
 <?php get_sidebar(); ?>
-</div>
 
 <!-- footer -->
 <?php get_footer(); ?>
